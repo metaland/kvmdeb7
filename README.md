@@ -41,10 +41,7 @@ Timezone : Asia/Jakarta
 Fail2Ban : [on]  
 IPv6     : [off] 
 VPS Swap File 500Mb (Virtual Memory)
-
 VPS Akan Reboot Otomatis Sehari Sekali
-
-
 
 ===========================
 
