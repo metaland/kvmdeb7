@@ -40,15 +40,8 @@ MRTG     : http://IPVPS:81/mrtg/
 Timezone : Asia/Jakarta  
 Fail2Ban : [on]  
 IPv6     : [off] 
-
-
-
-
-
-
-VPS Swap File 500Mb (Virtual Memory)
-VPS Akan Reboot Otomatis Sehari Sekali
-
+VPS Akan Reboot Otomatis Setiap Hari Sekali
+Rebootlah VPS Anda
 ===========================
 
                                               Modified by Metaland Open Source
