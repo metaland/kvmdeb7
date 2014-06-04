@@ -45,5 +45,5 @@ VPS Akan Reboot Setiap Hari Sekali
 
 ===========================
 
-                                              Modified by MEtaland Open Source
+                                              Modified by Metaland Open Source
                                 Thanks to Original Creator Kang Arie Wijayanto and Mikodemos
