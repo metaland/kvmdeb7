@@ -204,7 +204,8 @@ curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-login.sh > u
 curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-expired.sh > user-expired.sh
 curl https://raw.githubusercontent.com/metaland/ovzdeb7/master/userexpired.sh > userexpired.sh
 curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-limit.sh > user-limit.sh
-echo "0 0 * * * root /root/user-expire.sh" > /etc/cron.d/user-expire
+echo "0 0 * * * root /root/user-expired.sh" > /etc/cron.d/user-expired
+echo "0 0 * * * root /root/userexpired.sh" > /etc/cron.d/user-expired
 sed -i '$ i\screen -AmdS limit /root/limit.sh' /etc/rc.local
 chmod +x bench-network.sh
 chmod +x speedtest_cli.py
