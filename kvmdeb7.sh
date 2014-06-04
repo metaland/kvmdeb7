@@ -138,7 +138,6 @@ cd
 
 # setting port ssh
 sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port  80' /etc/ssh/sshd_config
 sed -i 's/Port 22/Port  22/g' /etc/ssh/sshd_config
 service ssh restart
 
@@ -193,6 +192,16 @@ rm /root/webmin_1.690_all.deb
 service webmin restart
 service vnstat restart
 
+# install swap file
+cd
+dd if=/dev/zero of=/swapfile bs=1024 count=524288
+mkswap /swapfile
+chown root:root /swapfile
+chmod 0600 /swapfile
+swapon /swapfile
+sed -i '$ i\swapon /swapfile' /etc/rc.local
+sed -i '$ i\swapon /swapfile' /etc/rc.local
+
 # downlaod script
 cd
 curl -L "https://raw.github.com/sivel/speedtest-cli/master/speedtest_cli.py" > speedtest_cli.py
@@ -241,9 +250,9 @@ echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
 echo "-------"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.tar)"  | tee -a log-install.txt
-echo "OpenSSH  : 22, 80, 143"  | tee -a log-install.txt
+echo "OpenSSH  : 22, 143"  | tee -a log-install.txt
 echo "Dropbear : 109, 110, 443"  | tee -a log-install.txt
-echo "Squid3   : 8080 (limit to IP SSH)"  | tee -a log-install.txt
+echo "Squid3   : 80, 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
 echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
