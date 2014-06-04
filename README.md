@@ -42,7 +42,4 @@ Fail2Ban : [on]
 IPv6     : [off] 
 VPS Akan Reboot Otomatis Setiap Hari Sekali
 Rebootlah VPS Anda
-===========================
 
-                                              Modified by Metaland Open Source
-                                Thanks to Original Creator Kang Arie Wijayanto and Mikodemos
