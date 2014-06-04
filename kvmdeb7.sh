@@ -201,7 +201,7 @@ wget -O bench-network.sh  "https://raw.githubusercontent.com/metaland/kvmdeb7/ma
 wget -O limit.sh "https://raw.githubusercontent.com/metaland/kvmdeb7/master/limit.sh"
 wget -O dropmon.sh "https://raw.githubusercontent.com/metaland/ovzdeb7/master/dropmon.sh"
 curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-login.sh > user-login.sh
-curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-expire.sh > user-expire.sh
+curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-expired.sh > user-expired.sh
 curl https://raw.githubusercontent.com/metaland/ovzdeb7/master/userexpired.sh > userexpired.sh
 curl https://raw.githubusercontent.com/metaland/kvmdeb7/master/user-limit.sh > user-limit.sh
 echo "0 0 * * * root /root/user-expire.sh" > /etc/cron.d/user-expire
