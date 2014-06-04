@@ -34,3 +34,7 @@ bench-network.sh
 user-login.sh
 user-limit.sh (non aktif)
 user-expired.sh
+
+
+Hapus Auto Reboot 	
+rm /etc/cron.d/reboot
